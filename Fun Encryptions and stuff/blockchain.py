@@ -1,3 +1,4 @@
+#Source of code taken from -> https://github.com/llSourcell/Simple_Blockchain_in_5_Minutes
 #generates timestamps
 import datetime
 #contains hashing algorithms
