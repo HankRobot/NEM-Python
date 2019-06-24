@@ -63,7 +63,6 @@ class Block:
 #to form a 'chain'. Thats why its called
 #'blockchain'
 class Blockchain:
-    
     #mining difficulty
     diff = 20
     #2^32. This is the maximum number
