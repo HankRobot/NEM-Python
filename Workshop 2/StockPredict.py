@@ -15,6 +15,7 @@ def get_data(filename):
 		for row in csvFileReader:
 			dates.append(int(row[0].split('-')[0]))
 			prices.append(float(row[1]))
+			print(str(row[0].split('-')[0])+ ' '+ str(row[1]))
 	return
 
 def predict_price(dates, prices, x):
@@ -39,9 +40,9 @@ def predict_price(dates, prices, x):
 
 	return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
-get_data('aapl.csv') # calling get_data method by passing the csv file to it
+get_data('test.csv') # calling get_data method by passing the csv file to it
 #print "Dates- ", dates
 #print "Prices- ", prices
 
-predicted_price = predict_price(dates, prices, 5) 
-print(predict_price)
+predicted_price = predict_price(dates, prices, 12) 
+print("This is the predicted price" + str(predict_price))
