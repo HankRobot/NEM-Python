@@ -1,6 +1,6 @@
 from turtle import *
 wn = Screen()
-count = 10
+count = 5
 angle = 180 + (count-2)*180/count
 print(angle)
 

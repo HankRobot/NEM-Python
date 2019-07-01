@@ -11,7 +11,7 @@ def substitute(text,guess):
         if position != '_':                                                     # only replace letters if guess doesn not have '_'
             replacement = replacement.replace(get_upperletters, position)
     return replacement
-        
-print(substitute('Dont tell anyone pls','__________encrypt_________'))
+    
+print(substitute('Dont tell anyone pls','c_________encrypt_________'))
 
 

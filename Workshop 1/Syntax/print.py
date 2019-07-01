@@ -25,3 +25,7 @@ print (6 % 4)
 #Part 3
 print ((2+6)/3.0, 2+(6/3.0))
 
+if (1):
+    if (1):
+        print(2)
+    print("Hi")

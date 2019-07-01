@@ -10,5 +10,5 @@ def analyse(text):
             return list1
         
 
-print(analyse("zZ"))
+print(analyse("good luck"))
 
