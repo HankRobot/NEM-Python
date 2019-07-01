@@ -37,7 +37,9 @@ def predict_price(dates, prices, x):
 	plt.title('Support Vector Regression')
 	plt.legend()
 	plt.show()
-
+	print("RBF: " + str(svr_rbf.predict(x)[0]))
+	print("Linear: " + str(svr_lin.predict(x)[0]))
+	print("Poly: " + str(svr_poly.predict(x)[0]))
 	return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
 get_data('test.csv') # calling get_data method by passing the csv file to it
@@ -45,4 +47,3 @@ get_data('test.csv') # calling get_data method by passing the csv file to it
 #print "Prices- ", prices
 
 predicted_price = predict_price(dates, prices, 12) 
-print("This is the predicted price" + str(predict_price))
